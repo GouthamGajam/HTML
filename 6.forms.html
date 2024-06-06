@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="" method="get">
+        <p>
+            Username: <input type="text" size="10" name="Username" maxlength="20">
+        </p>
+
+        <!-- size
+        The size attribute should not be used on new forms. It was used in older forms to indicate the width of the text input (measured by the number of characters that would be seen).
+        For example, a value of 3 would create a box wide enough to display three characters -->
+        <p>
+            Password: <input type="password" size="10" name="password" maxlength="8" >
+        </p>
+
+        <p>
+            comments <br>
+            <div>reviews --></div>
+            <div><textarea name="comments" cols="20" rows="4">Enter your feedback...</textarea></div>
+        </p>
+    </form>
+    <form action="" method="get">
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="comments">Feedback:</label>
+          <textarea name="comments" id="comments" cols="20" rows="4" placeholder="Enter your feedback..."></textarea>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+       
+
+      <br><br><hr><hr>
+
+      <form action="" method="post">
+        <p>
+            Select your gender only male or female or others <br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+        </p>
+        <p>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </p>
+        <p>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+      <br>
+      <hr>
+
+
+      <form action="http://www.example.com/profile.php">
+        <p>Please select your Genderss(USA ppl):</p>
+        
+        <input type="checkbox" id="Male" name="service" value="itunes" checked>
+        <label for="M">Male</label><br>
+        
+        <input type="checkbox" id="Female" name="service" value="lastfm">
+        <label for="F">Female</label><br>
+        
+        <input type="checkbox" id="HHH" name="service" value="spotify">
+        <label for="O">HHH</label><br>
+        
+        <button type="submit">Submit</button>
+      </form>
+
+      <hr>
+<hr>      
+
+        <form action="">
+            <p>What is your gender?</p>
+            <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <hr>
+        <form action="">
+            <label for="genders">Select your genders:</label><br>
+            <select id="genders" name="gender[]" multiple>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="non-binary">Non-binary</option>
+              <option value="transgender">Transgender</option>
+              <option value="other">Other</option>
+            </select><br><br>
+            
+            <button type="submit">Submit</button>
+          </form>
+          
+          
+  
+  
+</body>
+</html>
